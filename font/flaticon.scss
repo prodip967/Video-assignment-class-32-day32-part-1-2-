@@ -1,0 +1,37 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?479d0863f81c53337c82ec0526ca56db") format("truetype"),
+url("./flaticon.woff?479d0863f81c53337c82ec0526ca56db") format("woff"),
+url("./flaticon.woff2?479d0863f81c53337c82ec0526ca56db") format("woff2"),
+url("./flaticon.eot?479d0863f81c53337c82ec0526ca56db#iefix") format("embedded-opentype"),
+url("./flaticon.svg?479d0863f81c53337c82ec0526ca56db#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "profits": "\f101",
+    "deal": "\f102",
+    "drill": "\f103",
+);
+
+.flaticon-profits:before {
+    content: map-get($flaticon-map, "profits");
+}
+.flaticon-deal:before {
+    content: map-get($flaticon-map, "deal");
+}
+.flaticon-drill:before {
+    content: map-get($flaticon-map, "drill");
+}

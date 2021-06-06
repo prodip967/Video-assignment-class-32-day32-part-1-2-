@@ -1,0 +1,666 @@
+
+body,h1,h2,h3,h4,h5,h6,a,span,p{
+    font-family: 'Poppins', sans-serif;
+}
+/* header top */
+.header-top{
+    background-color: #0045ff;
+    padding: 12px 0;
+    position: relative;
+    z-index: 1;
+}
+.text-left ul li{
+    color: #fff;
+    margin-right: 20px;
+}
+.text-left ul li a{
+    color: #fff;
+    text-decoration: none;
+    transition: .4s;
+}
+.text-left ul li a:hover{
+    color: #212c4a;
+}
+
+/* 2no header */
+.logo{
+    margin-top: 26px;
+}
+.logo img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* menu */
+.navbar-head{
+    padding: 0;
+    background-color: #fff;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 4;
+}
+
+.nav-bar ul li{
+    display: inline-block;
+    padding: 40px 0;
+}
+.nav-bar ul li a{
+    color: #3c4660;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0px 10px;
+    transition: .4s;
+}
+.nav-bar ul li a span{
+    color: #3c4660;
+    font-size: .7rem;
+}
+.nav-bar ul li a:hover span{
+    color: #0045ff;
+}
+.nav-bar ul li a:hover{
+    color: #0045ff;
+}
+
+/*  */
+/* ropdown home */
+.nav-bar ul li{
+    position: relative;
+    
+}
+.nav-bar ul li ul{
+    text-align: left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    background-color: #0045ff;
+    margin-left: 0;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s; 
+}
+.nav-bar ul li ul li {
+    width: 160px;
+    padding: 0;
+    
+    transition: .5s;
+}
+.nav-bar ul li ul li a{
+    font-size: .9rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 15px 14px;
+    
+}
+.nav-bar ul li ul li:hover >a{
+    color: #0045ff;
+}
+.nav-bar ul li ul li:hover{
+    background-color: #fff;
+    color: #0045ff;
+}
+.nav-bar ul li:hover >ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* sub drop */
+.nav-bar ul li ul li{
+    position: relative;
+}
+.nav-bar ul li ul li ul{
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.nav-bar ul li ul li a span{
+    /* color: #fff;
+    position: relative;
+    left: 60px; */
+
+    position: absolute;
+    top: 70%;
+    margin-top: -17px;
+    /* left: auto; */
+    right: 4px;
+    width: 34px;
+    height: 34px;
+    color: #fff;
+    /* overflow: hidden; */
+    /* text-align: center; */
+    /* text-shadow: none; */
+}
+.nav-bar ul li ul li:hover > a span{
+    color: #0045ff;
+}
+
+/* header batton */
+.header-batton{
+    margin-top: 25px;
+}
+.devity-btn{
+    background: #0045ff;
+    padding: 16px 35px;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: all .4s ease-in-out;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #0045ff;
+    display: inline-block;
+    text-decoration: none;
+}
+.devity-btn:hover{
+    background-color: black;
+    color: #fff;
+}
+/* slider-section */
+/* .slider-section{
+    background: url(https://i0.wp.com/wptf.themepul.com/devity/wp-content/uploads/2020/10/default-slider1-scaled.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 200px 0;
+} */
+
+.new-caption{
+    position: absolute;
+    top: 20%;
+    width: 720px;
+}
+.new-caption h2{
+    font-size: 55px;
+    text-align: left;
+    font-weight: 800;
+    margin-bottom: 30px;
+    line-height: 80px;
+}
+.new-caption p{
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.6em;
+    color: #FFFFFF;
+}
+.slider-btn{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 50px;
+
+
+}
+
+.new-caption a{
+    display: inline-block;
+
+}
+/* annimation */
+.slider-play{
+    display: flex;
+    margin-left: 60px;
+    position: relative;
+    bottom: 20px;
+}
+.slider-play a{
+    font-size: 40px;
+    color: #fff;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    text-align: center;
+    background-color: #212c4a;
+    border-radius: 50%;
+    line-height: 90px;
+    position: relative;
+   
+}
+.slider-play a::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: -4px;
+    background-color: #212c4a;
+    border-radius: 50%;
+    animation: gore 2s ease-in-out infinite;
+}
+
+@keyframes gore{
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    30%{
+        transform: scale(1.1);
+        opacity: .3;
+    }
+    60%{
+        transform: scale(1.3);
+        opacity: .2;
+    }
+    100%{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+
+
+.carousel-item img{
+    width: 100%;
+    height: 100vh;
+}
+.slider-section{
+    position: relative;
+}
+.new{
+    z-index: 2;
+}
+.carousel-new-div{
+    z-index: 3 !important;
+    position: relative;
+}
+.batton-slide{
+    z-index: 3 ;
+}
+/* .slider-section::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    content: "";
+} */
+
+/* ..About section. */
+.about-img img{
+    transition: .6s;
+}
+.about-img img:hover{
+    transform: translateY(-8px);
+}
+.About-section{
+    padding: 100px 0;
+}
+.dec p {
+    color: #85929f;
+    font-size: 13px;
+    margin: 60px o;
+    font-weight: 500;
+}
+.dec {
+    margin: 26px 0;
+}
+.about-author {
+    margin-top: 60px;
+}
+.about-top  h3{
+    font-size: 16px;
+    color: #0045ff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.about-top h2 {
+    font-size: 42px;
+    line-height: 1.1em;
+    font-weight: 600;
+}
+.blockqute{
+    padding: 30px 30px 30px 100px;
+    background-color: #f0f5fe;
+    border: none;
+    position: relative;
+    text-align: left;
+    border-radius: 5px;
+}
+.blockqute span{
+    position: absolute;
+    top: calc(50% - 20px);
+    left: 30px;
+    font-size: 50px;
+    line-height: 40px;
+    color: #0045ff;
+    /* font-family:"Font Awesome 5 Free";
+    content: '\f10d'; */
+}
+.about-title h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.about-title h3 {
+    font-size: 13px;
+    color: #0045ff;
+}
+.abut-btn{
+    margin-left: 20px;
+}
+.about-a-left{
+    position: relative;
+    margin-right: 20px;
+}
+.about-a-left:before {
+    content: "";
+    width: 1px;
+    height: 61%;
+    position: absolute;
+    right: -22px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-right: 1px dashed blue;
+}
+
+/* service-section */
+.service-section{
+    background-color: #eef8fd;
+}
+
+.service-item{
+    background-color: #fff;
+    padding: 60px 50px 60px 50px;
+    border-style: solid;
+    border-width: 0px 0px 0px 0px;
+    border-color: #02010100;
+    transition: .4s;
+}
+.icon-service span{
+    font-size: 72px;
+    
+}
+.service-text h3{
+    margin: 20px 0;
+    color: #212C4A;
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.service-text p{
+    color: #212C4A;
+    font-size: 14px;
+}
+
+/* .service-batton{
+    margin-top: 30px;
+} */
+.service-batton a{
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #212C4A;
+    text-decoration: none;
+    display: inline-block;
+}
+.service-item-center{
+    background-color: #0045ff;
+    color: #fff;
+}
+/* hover service-section */
+.service-item:hover{
+    background-color: #0045ff;
+    color: #fff;
+}
+.service-item:hover .service-text h3{
+    color: #fff;
+}
+.service-item:hover .service-text p{
+    color: #fff;
+}
+.service-item:hover .service-batton a{
+    color: #fff;
+}
+.head-text{
+    padding: 30px 0;
+}
+.head-text h4{
+    color: #0045FF;
+}
+.head-text h2{
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    color: #010425;
+}
+
+/* DISGUST WITH TEAM */
+.suport-team-gbimg{
+    background: url(https://i0.wp.com/wptf.themepul.com/devity/wp-content/uploads/2020/09/video.jpg) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 200px 0;
+}
+.slider-play2{
+    display: flex;
+    
+    position: relative;
+    justify-content: center;
+    top: 50px;
+    
+}
+.slider-play2 a{
+    font-size: 40px;
+    color: #fff;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    text-align: center;
+    background-color: #0045FFB8;
+    border-radius: 50%;
+    line-height: 90px;
+    position: relative;
+}
+.slider-play2 a::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    top: 0;
+    left: -4px;
+    background-color: #0045FFB8;
+    border-radius: 50%;
+    animation: gore2 2s ease-in-out infinite;
+}
+@keyframes gore2{
+    0%{
+        transform: scale(1);
+        opacity: .1;
+    }
+    30%{
+        transform: scale(1.1);
+        opacity: .2;
+    }
+    60%{
+        transform: scale(1.2);
+        opacity: .3;
+    }
+    100%{
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}
+/* item-section */
+.item-section h3{
+    font-size: 22px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+.item-section p{
+    font-size: 15px;
+}
+.item-section span{
+    font-size: 40px;
+}
+.item-section{
+    background-color: #0045FF;
+    color: #fff;
+    padding: 50px 40px 50px 40px;
+    transition: .4s;
+    margin-top: 10px;
+    margin-right: -10px;
+
+}
+.item-section:hover{
+    background-color: #212c4a;
+}
+.item-section-fix{
+    background-color: #212c4a;
+}
+/* project-section */
+
+.project-img{
+    position: relative;
+}
+
+.project-text {
+    background-color: #fff;
+    width: 310px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    margin-left: 17px;
+    padding: 5px 18px;
+    transition: .5s;
+}
+.project-text h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.project-text li{
+    list-style: none;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.project-text:hover{
+    transform: translateY(-12px);
+}
+
+/* app-section */
+.app-section{
+    background-image: url(http://wptf.themepul.com/devity/wp-content/uploads/2020/09/banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 150px 0;
+}
+
+.app-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(231, 233, 243,.9);
+    z-index: -1;
+}
+
+.text-h2 h2{
+    color: #0045FF;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.big-text{
+    margin: 20px 0;
+}
+.big-text h2{
+    color: #212C4A;
+    font-size: 59px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+.text-p p{
+    color: #212C4A;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+.batton-1{
+    margin-right: 30px;
+}
+.batton-2{
+    margin-right: 30px;
+}
+.batton-app a{
+    transition: .5s;
+}
+.batton-app a:hover{
+    transform: translateY(-10px);
+}
+/* batton */
+
+.slider-play-3{
+    display: flex;
+    
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    bottom: -120px;
+}
+.slider-play-3 a{
+    font-size: 40px;
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    text-align: center;
+    background-color: #212c4a;
+    border-radius: 50%;
+    line-height: 150px;
+    position: relative;
+}
+.slider-play-3 a::before{
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 0;
+    left: -4px;
+    background-color: #212c4a;
+    border-radius: 50%;
+    animation: gore 2s ease-in-out infinite;
+}
+/* .footer-list */
+
+.foottter{
+    background-color: #212c4a;
+    color: #fff;
+    padding: 15px 0;
+}
+.footer-list{
+    margin-top: 25px;
+}
+.footer-pp{
+    margin-top: 25px;
+}
+.footer-list ul{
+    justify-content: flex-end;
+
+}
+.footer-list ul li{
+    list-style: none;
+}
+.footer-list ul li a{
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .4s;
+    color: #fff;
+}
+.footer-list ul li a:hover{
+    color: #0045ff;
+}
